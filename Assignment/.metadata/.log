@@ -1,0 +1,51 @@
+!SESSION 2025-01-16 19:28:14.751 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-16 19:29:06.051
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-16 19:29:06.053
+!MESSAGE Log4j2 initialized with config file C:\Users\Loc\OneDrive\Desktop\HALA\RTOS\Assignment\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-16 19:29:13.498
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-16 19:30:16.391
+!MESSAGE Indexed '1_RTOS_UART' (3 sources, 53 headers) in 0.784 sec: 1,950 declarations; 2,836 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-16 19:41:01.734
+!MESSAGE Indexed 'ENTRANCE_TEST_HALA' (3 sources, 1 headers) in 0.024 sec: 83 declarations; 89 references; 12 unresolved inclusions; 0 syntax errors; 52 unresolved names (23%)
+!SESSION 2025-01-16 19:44:03.172 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Loc\OneDrive\Desktop\HALA\RTOS\Assignment
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-16 19:44:06.689
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-16 19:44:06.691
+!MESSAGE Log4j2 initialized with config file C:\Users\Loc\OneDrive\Desktop\HALA\RTOS\Assignment\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-16 19:44:15.733
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-01-16 19:46:40.711 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Loc\OneDrive\Desktop\HALA\RTOS\Assignment
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-16 19:46:44.205
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-16 19:46:44.206
+!MESSAGE Log4j2 initialized with config file C:\Users\Loc\OneDrive\Desktop\HALA\RTOS\Assignment\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-16 19:46:53.232
+!MESSAGE Started RMI Server, listening on port 41337
