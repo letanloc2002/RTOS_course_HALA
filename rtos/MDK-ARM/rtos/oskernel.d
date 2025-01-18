@@ -1,0 +1,10 @@
+rtos\oskernel.o: C:\Users\Loc\OneDrive\Desktop\HALA\RTOS_course_HALA\osKernel.c
+rtos\oskernel.o: C:\Users\Loc\OneDrive\Desktop\HALA\RTOS_course_HALA\oskernel.h
+rtos\oskernel.o: C:\Users\Loc\OneDrive\Desktop\HALA\RTOS_course_HALA\stm32f446xx.h
+rtos\oskernel.o: ../Drivers/CMSIS/Include/core_cm4.h
+rtos\oskernel.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+rtos\oskernel.o: ../Drivers/CMSIS/Include/cmsis_version.h
+rtos\oskernel.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+rtos\oskernel.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+rtos\oskernel.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+rtos\oskernel.o: C:\Users\Loc\OneDrive\Desktop\HALA\RTOS_course_HALA\system_stm32f4xx.h
