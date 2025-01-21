@@ -39,6 +39,13 @@ uint32_t MILLIS_PRESCALER;
 1000ms-> Bus_Freq
 1ms -> Bus_Freq/1000
 */
+#define INTCTRL (*((volatile uint32_t *)0XE000ED04))
+#define PENDSTSET   (1<<26)
+
+void osThreadYield(){
+	SysTick->VAL = 0;
+	INTCTRL |= PENDSTSET ;
+}
 
 
 void osKernelLaunch(uint32_t quanta){

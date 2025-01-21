@@ -22,7 +22,7 @@ Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
 C:\Users\Loc\OneDrive\Desktop\HALA\RTOS_course_HALA\RTOS_1\MDK-ARM\RTOS_1.uvprojx
-Project File Date:  01/21/2025
+Project File Date:  01/22/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
@@ -30,21 +30,22 @@ Rebuild target 'RTOS_1'
 Note: source file '.\osKernel.s' - object file renamed from 'RTOS_1\osKernel.o' to 'RTOS_1\oskernel_1.o'.
 Note: source file '.\osKernel.s' - object file renamed from 'RTOS_1\osKernel.o' to 'RTOS_1\oskernel_1.o'.
 assembling startup_stm32f446xx.s...
-"osKernel.s", line 21: Warning: A1581W: Added 2 bytes of padding at address 0x1e
-   21 00000020  END
-0 Errors, 1 Warning
 assembling osKernel.s...
+../Core/Src/main.c(12): warning: implicit declaration of function 'osThreadYield' is invalid in C99 [-Wimplicit-function-declaration]
+                osThreadYield();
+                ^
+1 warning generated.
 compiling main.c...
-osKernel.c(58): warning: implicit declaration of function 'osSchedulerLaunch' is invalid in C99 [-Wimplicit-function-declaration]
+compiling system_stm32f4xx.c...
+osKernel.c(65): warning: implicit declaration of function 'osSchedulerLaunch' is invalid in C99 [-Wimplicit-function-declaration]
         osSchedulerLaunch();
         ^
 1 warning generated.
 compiling osKernel.c...
-compiling system_stm32f4xx.c...
 linking...
-Program Size: Code=796 RO-data=468 RW-data=0 ZI-data=2864  
+Program Size: Code=896 RO-data=468 RW-data=0 ZI-data=2880  
 FromELF: creating hex file...
-"RTOS_1\RTOS_1.axf" - 0 Error(s), 1 Warning(s).
+"RTOS_1\RTOS_1.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -67,7 +68,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:6.1.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
