@@ -136,3 +136,15 @@ void osSpinLock_Wait(uint32_t *semaphore){
 	
 	__enable_irq();
 }
+void osCooperative_Wait(uint32_t *semaphore){
+	__disable_irq();
+	
+	while(*semaphore <= 0){
+		__enable_irq();
+		osThreadYield();
+		__disable_irq();
+	}
+	*semaphore -=1;
+	
+	__enable_irq();
+}
