@@ -8,13 +8,18 @@ uint32_t semaphore1,semaphore2;
 void Task0(){
 	while(1)
 	{
+		osSpinLock_Wait(&semaphore1);
 		i0++;
-		osThreadYield();
+		 osSemaphore_Give(&semaphore2);
 	}
 }
 void Task1(){
 	while(1)
-		i1++;
+	{
+		osSpinLock_Wait(&semaphore2);
+		i0++;
+		osSemaphore_Give(&semaphore1);
+	}
 }
 
 

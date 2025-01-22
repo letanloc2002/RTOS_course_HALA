@@ -116,3 +116,23 @@ uint8_t osKernelAddThread(void (*task0)(void),void (*task1)(void), void (*task2)
 	
 	return 1;
 }
+
+void osSemaphore_Init(uint32_t *semaphore, uint32_t val){
+	*semaphore = val;
+}
+void osSemaphore_Give(uint32_t *semaphore){
+	__disable_irq();
+	*semaphore +=1;
+	__enable_irq();
+}
+void osSpinLock_Wait(uint32_t *semaphore){
+	__disable_irq();
+	
+	while(*semaphore <= 0){
+		__enable_irq();
+		__disable_irq();
+	}
+	*semaphore -=1;
+	
+	__enable_irq();
+}

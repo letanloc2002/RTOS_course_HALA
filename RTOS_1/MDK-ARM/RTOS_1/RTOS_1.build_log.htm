@@ -29,12 +29,21 @@ Project File Date:  01/22/2025
 Rebuild target 'RTOS_1'
 Note: source file '.\osKernel.s' - object file renamed from 'RTOS_1\osKernel.o' to 'RTOS_1\oskernel_1.o'.
 Note: source file '.\osKernel.s' - object file renamed from 'RTOS_1\osKernel.o' to 'RTOS_1\oskernel_1.o'.
-assembling startup_stm32f446xx.s...
 assembling osKernel.s...
-../Core/Src/main.c(12): warning: implicit declaration of function 'osThreadYield' is invalid in C99 [-Wimplicit-function-declaration]
-                osThreadYield();
+assembling startup_stm32f446xx.s...
+../Core/Src/main.c(11): warning: implicit declaration of function 'osSpinLock_Wait' is invalid in C99 [-Wimplicit-function-declaration]
+                osSpinLock_Wait(&semaphore1);
                 ^
-1 warning generated.
+../Core/Src/main.c(13): warning: implicit declaration of function 'osSemaphore_Give' is invalid in C99 [-Wimplicit-function-declaration]
+                 osSemaphore_Give(&semaphore2);
+                 ^
+../Core/Src/main.c(19): warning: implicit declaration of function 'osSpinLock_Wait' is invalid in C99 [-Wimplicit-function-declaration]
+                osSpinLock_Wait(&semaphore2);
+                ^
+../Core/Src/main.c(21): warning: implicit declaration of function 'osSemaphore_Give' is invalid in C99 [-Wimplicit-function-declaration]
+                osSemaphore_Give(&semaphore1);
+                ^
+4 warnings generated.
 compiling main.c...
 compiling system_stm32f4xx.c...
 osKernel.c(65): warning: implicit declaration of function 'osSchedulerLaunch' is invalid in C99 [-Wimplicit-function-declaration]
@@ -43,9 +52,9 @@ osKernel.c(65): warning: implicit declaration of function 'osSchedulerLaunch' is
 1 warning generated.
 compiling osKernel.c...
 linking...
-Program Size: Code=896 RO-data=468 RW-data=0 ZI-data=2880  
+Program Size: Code=968 RO-data=468 RW-data=0 ZI-data=2880  
 FromELF: creating hex file...
-"RTOS_1\RTOS_1.axf" - 0 Error(s), 2 Warning(s).
+"RTOS_1\RTOS_1.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -68,7 +77,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:6.1.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
